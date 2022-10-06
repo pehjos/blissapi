@@ -50,6 +50,15 @@ export const createPost = async (req, res) => {
          landlord_id,
          hno,
          user_id,
+         name,
+         level,
+       index,
+         ocupieddate,
+         note,
+
+
+
+
      } = req.body;
 
     const newPostMessage = new PostMessage({ 
@@ -64,7 +73,16 @@ export const createPost = async (req, res) => {
           landlord,
          landlord_id,
          hno, 
-         user_id,})
+         user_id,
+         name,
+         level,
+      index,
+         ocupieddate,
+         note,
+
+
+        
+        })
 
     try {
         await newPostMessage.save();
