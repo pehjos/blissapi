@@ -1,4 +1,5 @@
 
+
 import mongoose from 'mongoose';
 
 const postSchema = mongoose.Schema({
@@ -15,6 +16,13 @@ const postSchema = mongoose.Schema({
      landlord_id: String,
      hno: String,
      user_id:String,
+     name:String,
+     level:String,
+ index:String,
+     ocupieddate:String,
+     note:String,
+
+
     createdAt: {
     type: Date,
     default: new Date(),
